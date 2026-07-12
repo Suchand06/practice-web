@@ -1,0 +1,27 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(227, 255, 127);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    
+    transform: scale(1.2)  rotate(45deg) skew(45deg);
+
+    /* transform: translate(500px,500px); */
+    
+}

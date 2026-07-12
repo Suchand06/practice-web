@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .card{
+            width: 360px;
+            height: 420px;
+            display: flex;
+            background-color: rgb(48, 48, 2);
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: inset 1px 2px 300px yellow;
+        }
+        .card img{
+            height: 35%;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 300px rgb(255, 255, 255);
+        }
+        .card h2{
+            font-size: 2rem;
+            color: #d8f56e;
+            font-weight: 400;
+            font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+        }
+        .card p{
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+            margin: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ffffff, #e6f0a8, #000000, #d8f56e);           
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease infinite;
+             transition: background 0.4s ease;
+
+        }
+
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="pok.jpg" alt="poke">
+            <h2>IT'S POKEMONN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi neque fugit blanditiis, ratione quaerat quibusdam voluptatibus voluptate ut.</p>
+        </div>
+    </div>
+</body>
+</html>
